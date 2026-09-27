@@ -1,0 +1,7 @@
+mysql> create database assignment1;
+Query OK, 1 row affected (0.04 sec)
+mysql> use assignment1;
+Database changed
+
+mysql> CREATE TABLE dup_countries AS
+    -> SELECT * FROM countries;
