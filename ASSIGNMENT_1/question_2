@@ -1,0 +1,8 @@
+mysql> create database assignment1;
+Query OK, 1 row affected (0.04 sec)
+mysql> CREATE TABLE IF NOT EXISTS countries (
+    ->     country_id INT,
+    ->     country_name VARCHAR(50),
+    ->     region_id INT
+    -> );
+Query OK, 0 rows affected,
