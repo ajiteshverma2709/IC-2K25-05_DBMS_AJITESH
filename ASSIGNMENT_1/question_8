@@ -1,0 +1,11 @@
+mysql> CREATE TABLE job_history (
+    ->     employee_id INT,
+    ->     start_date DATE,
+    ->     end_date DATE,
+    ->     job_id VARCHAR(10),
+    ->     department_id INT
+    -> );
+Query OK, 0 rows affected (0.06 sec)
+
+mysql> INSERT INTO job_history
+    -> VALUES (101, '2026-01-01', '2026-08-17', 'IT_PROG', 10);
