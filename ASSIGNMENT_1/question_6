@@ -1,0 +1,10 @@
+mysql> use assignment1;
+Database changed
+mysql> CREATE TABLE jobs (
+    ->     job_id INT,
+    ->     job_title VARCHAR(35),
+    ->     min_salary DECIMAL(6,0),
+    ->     max_salary DECIMAL(6,0),
+    ->     CHECK (max_salary <= 25000)
+    -> );
+Query OK, 0 rows affected (0.09 sec)
