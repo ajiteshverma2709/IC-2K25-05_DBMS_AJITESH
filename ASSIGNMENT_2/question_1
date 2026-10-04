@@ -1,0 +1,17 @@
+create database hr;
+use hr;
+create table employees(
+  employee_id int primary key,
+  first_name varchar(50),
+  last_name varchar(50)
+);
+
+insert into employees(employee_id, first_name, last_name)
+VALUES(1, 'ellen','abel'),
+(2, 'Sundar', 'Ande'),
+(3, 'David','Austin'),
+(4, 'Nancy','Green')
+
+select first_name AS 'first name',
+
+last_name as 'last name' from employees;
