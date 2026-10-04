@@ -1,0 +1,18 @@
+create database hr;
+use hr;
+
+create table employee(
+  employee_id int primary key,
+  first_name varchar(50),
+  last_name varchar(50)
+  department_id int
+);
+
+insert into employees(employee_id, first_name, last_name)
+VALUES(1, 'ellen','abel',10),
+(2, 'Sundar', 'Ande',20),
+(3, 'David','Austin',30),
+(4, 'Nancy','Green'40)
+
+select distinct department_id;
+from employees;
