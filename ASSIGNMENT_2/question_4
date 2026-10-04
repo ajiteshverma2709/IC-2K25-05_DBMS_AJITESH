@@ -1,0 +1,46 @@
+mysql> ALTER TABLE employees
+    -> ADD salary DECIMAL(10,2);
+Query OK, 0 rows affected (0.04 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> UPDATE employees
+    -> SET salary = 50000
+    -> WHERE employee_id = 1;
+Query OK, 1 row affected (0.02 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql>
+mysql> UPDATE employees
+    -> SET salary = 60000
+    -> WHERE employee_id = 2;
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql>
+mysql> UPDATE employees
+    -> SET salary = 45000
+    -> WHERE employee_id = 3;
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql>
+mysql> UPDATE employees
+    -> SET salary = 55000
+    -> WHERE employee_id = 4;
+Query OK, 1 row affected (0.02 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> SELECT first_name,
+    ->        last_name,
+    ->        salary,
+    ->        salary * 0.15 AS PF
+    -> FROM employees;
++------------+-----------+----------+-----------+
+| first_name | last_name | salary   | PF        |
++------------+-----------+----------+-----------+
+| Ellen      | Abel      | 50000.00 | 7500.0000 |
+| Sundar     | Ande      | 60000.00 | 9000.0000 |
+| David      | Austin    | 45000.00 | 6750.0000 |
+| Nancy      | Green     | 55000.00 | 8250.0000 |
++------------+-----------+----------+-----------+
+4 rows in set (0.01 sec)
