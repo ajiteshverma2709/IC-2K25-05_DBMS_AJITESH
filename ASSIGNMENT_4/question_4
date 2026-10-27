@@ -1,0 +1,8 @@
+mysql> SELECT MAX(salary) AS Maximum_Salary
+    -> FROM employees
+    -> WHERE job_id = 'PROGRAMMER';
++----------------+
+| Maximum_Salary |
++----------------+
+|        5200.00 |
++----------------+
