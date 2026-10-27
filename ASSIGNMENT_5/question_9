@@ -1,0 +1,18 @@
+mysql> SELECT e.first_name, e.last_name, e.salary
+    -> FROM employees e
+    -> WHERE e.salary =
+    -> (
+    ->     SELECT MIN(e2.salary)
+    ->     FROM employees e2
+    ->     WHERE e2.department_id = e.department_id
+    -> );
++------------+-----------+----------+
+| first_name | last_name | salary   |
++------------+-----------+----------+
+| David      | Austin    | 45000.00 |
+| Michael    | Bull      | 55000.00 |
+| Lisa       | Jones     | 65000.00 |
+| James      | Miller    | 70000.00 |
+| Emma       | Davis     | 30000.00 |
+| Daniel     | Moore     | 50000.00 |
++------------+-----------+----------+
