@@ -1,0 +1,8 @@
+mysql> SELECT COUNT(DISTINCT job_id) AS Number_of_Jobs
+    -> FROM employees;
++----------------+
+| Number_of_Jobs |
++----------------+
+|              4 |
++----------------+
+1 row in set (0.01 sec
