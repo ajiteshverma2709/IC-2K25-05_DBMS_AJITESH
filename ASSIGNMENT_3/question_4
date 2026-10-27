@@ -1,0 +1,14 @@
+mysql> SELECT first_name, last_name, hire_date
+    -> FROM employees
+    -> WHERE YEAR(hire_date) = 1987;
++------------+-----------+------------+
+| first_name | last_name | hire_date  |
++------------+-----------+------------+
+| Steven     | King      | 1987-06-17 |
+| John       | Chen      | 1987-09-28 |
+| Ismael     | Sciarra   | 1987-09-30 |
+| Jose       | Manuel    | 1987-09-30 |
+| Luis       | Popp      | 1987-12-07 |
+| Sarah      | Bell      | 1987-04-23 |
+| Rebecca    | Clark     | 1987-05-18 |
++------------+-----------+------------+
