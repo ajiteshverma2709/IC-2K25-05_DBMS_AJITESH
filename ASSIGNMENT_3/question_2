@@ -1,0 +1,25 @@
+CREATE DATABASE dbms;
+
+USE dbms;
+
+CREATE TABLE user (
+    id INT,
+    name VARCHAR(20),
+    pass VARCHAR(20),
+    age INT
+);
+
+INSERT INTO user VALUES
+(1, 'ram', 'r23', 25),
+(2, 'shyam', 's22', 23),
+(3, 'ram', 'r12', 23),
+(4, 'manoj', 'm23', 23),
+(5, 'manoj', 'm23', 23),
+(6, 'rohit', 'r33', 33);
+
+SELECT * FROM user;
+
+
+Names starting with 'm'
+SELECT * FROM user
+WHERE name LIKE 'm%';
