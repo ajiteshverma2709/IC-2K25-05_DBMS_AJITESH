@@ -1,0 +1,12 @@
+mysql> SELECT DISTINCT job
+    -> FROM employees;
++-----------------+
+| job             |
++-----------------+
+| President       |
+| Administration  |
+| Programmer      |
+| Finance Manager |
+| Accountant      |
+| Shipping Clerk  |
++-----------------+
