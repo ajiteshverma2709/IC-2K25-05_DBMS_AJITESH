@@ -1,0 +1,16 @@
+mysql> SELECT first_name, last_name
+    -> FROM employees
+    -> WHERE department_id =
+    -> (
+    ->     SELECT department_id
+    ->     FROM departments
+    ->     WHERE department_name = 'IT'
+    -> );
++------------+-----------+
+| first_name | last_name |
++------------+-----------+
+| Ellen      | Abel      |
+| Sundar     | Ande      |
+| David      | Austin    |
+| Sophia     | Martin    |
++------------+-----------+
