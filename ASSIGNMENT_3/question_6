@@ -1,0 +1,18 @@
+mysql> SELECT last_name, job, salary
+    -> FROM employees
+    -> WHERE job IN ('Programmer', 'Shipping Clerk')
+    -> AND salary NOT IN (4500, 10000, 15000);
++-----------+----------------+---------+
+| last_name | job            | salary  |
++-----------+----------------+---------+
+| Hunold    | Programmer     | 9000.00 |
+| Ernst     | Programmer     | 6000.00 |
+| Austin    | Programmer     | 4800.00 |
+| Pataballa | Programmer     | 4800.00 |
+| Lorentz   | Programmer     | 4200.00 |
+| Manuel    | Shipping Clerk | 2600.00 |
+| Popp      | Shipping Clerk | 6900.00 |
+| Fripp     | Shipping Clerk | 8200.00 |
+| Vargas    | Shipping Clerk | 2500.00 |
+| Taylor    | Shipping Clerk | 3200.00 |
++-----------+----------------+---------+
