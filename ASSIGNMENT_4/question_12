@@ -1,0 +1,13 @@
+mysql> SELECT
+    ->     job_id,
+    ->     AVG(salary) AS Average_Salary
+    -> FROM employees
+    -> WHERE job_id <> 'PROGRAMMER'
+    -> GROUP BY job_id;
++---------+----------------+
+| job_id  | Average_Salary |
++---------+----------------+
+| MANAGER |    8250.000000 |
+| ANALYST |    5840.000000 |
+| CLERK   |    3025.000000 |
++---------+----------------+
