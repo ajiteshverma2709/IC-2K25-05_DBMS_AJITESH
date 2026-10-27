@@ -1,0 +1,13 @@
+mysql> SELECT last_name
+    -> FROM employees
+    -> WHERE LENGTH(last_name) = 6;
++-----------+
+| last_name |
++-----------+
+| Hunold    |
+| Austin    |
+| Faviet    |
+| Manuel    |
+| Vargas    |
+| Taylor    |
++-----------+
