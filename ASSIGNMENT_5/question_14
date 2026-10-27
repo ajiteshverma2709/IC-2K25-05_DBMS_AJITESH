@@ -1,0 +1,21 @@
+mysql> SELECT
+    ->     e.employee_id,
+    ->     e.first_name,
+    ->     e.last_name,
+    ->     e.salary
+    -> FROM employees e
+    -> WHERE e.salary >
+    -> (
+    ->     SELECT AVG(e2.salary)
+    ->     FROM employees e2
+    ->     WHERE e2.department_id = e.department_id
+    -> );
++-------------+------------+-----------+----------+
+| employee_id | first_name | last_name | salary   |
++-------------+------------+-----------+----------+
+|           1 | Ellen      | Abel      | 90000.00 |
+|           4 | Nancy      | Green     | 75000.00 |
+|           5 | John       | Bell      | 85000.00 |
+|           8 | Robert     | King      | 95000.00 |
+|          13 | Olivia     | Taylor    | 40000.00 |
++-------------+------------+-----------+----------+
