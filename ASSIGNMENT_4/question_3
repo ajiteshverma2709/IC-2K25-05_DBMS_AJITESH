@@ -1,0 +1,7 @@
+mysql> SELECT MIN(salary) AS Minimum_Salary
+    -> FROM employees;
++----------------+
+| Minimum_Salary |
++----------------+
+|        2800.00 |
++----------------+
