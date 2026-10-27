@@ -1,0 +1,10 @@
+mysql> SELECT last_name
+    -> FROM employees
+    -> WHERE last_name LIKE '__e%';
++-----------+
+| last_name |
++-----------+
+| Greenberg |
+| Chen      |
++-----------+
+2 rows in set (0.00 sec)
