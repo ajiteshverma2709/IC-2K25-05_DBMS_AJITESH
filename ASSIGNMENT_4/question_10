@@ -1,0 +1,13 @@
+mysql> SELECT
+    ->     department_id,
+    ->     SUM(salary) AS Total_Salary
+    -> FROM employees
+    -> GROUP BY department_id;
++---------------+--------------+
+| department_id | Total_Salary |
++---------------+--------------+
+|            10 |     58500.00 |
+|            20 |     20800.00 |
+|            30 |     24600.00 |
+|            40 |     16000.00 |
++---------------+--------------+
