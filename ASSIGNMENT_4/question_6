@@ -1,0 +1,11 @@
+mysql> SELECT
+    ->     MAX(salary) AS Highest_Salary,
+    ->     MIN(salary) AS Lowest_Salary,
+    ->     SUM(salary) AS Total_Salary,
+    ->     AVG(salary) AS Average_Salary
+    -> FROM employees;
++----------------+---------------+--------------+----------------+
+| Highest_Salary | Lowest_Salary | Total_Salary | Average_Salary |
++----------------+---------------+--------------+----------------+
+|        9000.00 |       2800.00 |    119900.00 |    5213.043478 |
++----------------+---------------+--------------+----------------+
