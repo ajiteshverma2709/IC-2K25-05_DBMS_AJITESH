@@ -1,0 +1,9 @@
+mysql> SELECT DISTINCT salary
+    -> FROM employees
+    -> ORDER BY salary ASC
+    -> LIMIT 1 OFFSET 3;
++----------+
+| salary   |
++----------+
+| 45000.00 |
++----------+
