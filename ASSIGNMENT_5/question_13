@@ -1,0 +1,27 @@
+mysql> SELECT
+    ->     e.employee_id,
+    ->     e.first_name,
+    ->     e.last_name,
+    ->     d.department_name
+    -> FROM employees e
+    -> JOIN departments d
+    -> ON e.department_id = d.department_id;
++-------------+------------+-----------+-----------------+
+| employee_id | first_name | last_name | department_name |
++-------------+------------+-----------+-----------------+
+|           1 | Ellen      | Abel      | IT              |
+|           2 | Sundar     | Ande      | IT              |
+|           3 | David      | Austin    | IT              |
+|          15 | Sophia     | Martin    | IT              |
+|           5 | John       | Bell      | Sales           |
+|           6 | Sarah      | Brown     | Sales           |
+|           7 | Michael    | Bull      | Sales           |
+|           4 | Nancy      | Green     | HR              |
+|          14 | Daniel     | Moore     | HR              |
+|           8 | Robert     | King      | Finance         |
+|           9 | Lisa       | Jones     | Finance         |
+|          11 | Emma       | Davis     | Shipping        |
+|          12 | William    | Wilson    | Shipping        |
+|          13 | Olivia     | Taylor    | Shipping        |
+|          10 | James      | Miller    | Marketing       |
++-------------+------------+-----------+-----------------+
