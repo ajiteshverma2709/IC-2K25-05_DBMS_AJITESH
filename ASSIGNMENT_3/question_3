@@ -1,0 +1,16 @@
+mysql> SELECT first_name, last_name, salary
+    -> FROM employees
+    -> WHERE salary NOT BETWEEN 10000 AND 15000
+    -> AND department_id IN (30, 100);
++------------+-----------+---------+
+| first_name | last_name | salary  |
++------------+-----------+---------+
+| Daniel     | Faviet    | 9000.00 |
+| John       | Chen      | 8200.00 |
+| Ismael     | Sciarra   | 7700.00 |
+| Jose       | Manuel    | 2600.00 |
+| Luis       | Popp      | 6900.00 |
+| Adam       | Fripp     | 8200.00 |
+| Peter      | Vargas    | 2500.00 |
+| Charles    | Taylor    | 3200.00 |
++------------+-----------+---------+
