@@ -1,0 +1,11 @@
+mysql> SELECT DISTINCT salary
+    -> FROM employees
+    -> ORDER BY salary DESC
+    -> LIMIT 3;
++----------+
+| salary   |
++----------+
+| 95000.00 |
+| 90000.00 |
+| 85000.00 |
++----------+
