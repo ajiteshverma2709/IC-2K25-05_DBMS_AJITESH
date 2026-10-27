@@ -1,0 +1,17 @@
+mysql> SELECT first_name, last_name
+    -> FROM employees
+    -> WHERE employee_id IN
+    -> (
+    ->     SELECT manager_id
+    ->     FROM employees
+    ->     WHERE manager_id IS NOT NULL
+    -> );
++------------+-----------+
+| first_name | last_name |
++------------+-----------+
+| Ellen      | Abel      |
+| John       | Bell      |
+| Robert     | King      |
+| Emma       | Davis     |
+| Nancy      | Green     |
++------------+-----------+
