@@ -1,0 +1,14 @@
+mysql> SELECT
+    ->     manager_id,
+    ->     MIN(salary) AS Lowest_Salary
+    -> FROM employees
+    -> GROUP BY manager_id;
++------------+---------------+
+| manager_id | Lowest_Salary |
++------------+---------------+
+|       NULL |       7500.00 |
+|        101 |       3100.00 |
+|        106 |       3000.00 |
+|        110 |       4600.00 |
+|        114 |       2800.00 |
++------------+---------------+
