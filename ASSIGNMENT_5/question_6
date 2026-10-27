@@ -1,0 +1,15 @@
+mysql> SELECT e.first_name, e.last_name, e.salary
+    -> FROM employees e
+    -> WHERE e.salary =
+    -> (
+    ->     SELECT jg.lowest_sal
+    ->     FROM job_grades jg
+    ->     WHERE e.salary BETWEEN jg.lowest_sal AND jg.highest_sal
+    -> );
++------------+-----------+----------+
+| first_name | last_name | salary   |
++------------+-----------+----------+
+| Sarah      | Brown     | 60000.00 |
+| Olivia     | Taylor    | 40000.00 |
+| Sophia     | Martin    | 60000.00 |
++------------+-----------+----------+
