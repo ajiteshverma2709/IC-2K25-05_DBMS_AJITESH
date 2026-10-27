@@ -1,0 +1,29 @@
+mysql> SELECT
+    ->     first_name,
+    ->     last_name,
+    ->     salary,
+    ->     salary * 0.15 AS PF
+    -> FROM employees;
++------------+-----------+----------+-----------+
+| first_name | last_name | salary   | PF        |
++------------+-----------+----------+-----------+
+| Steven     | King      | 24000.00 | 3600.0000 |
+| Neena      | Kochhar   | 17000.00 | 2550.0000 |
+| Lex        | De Haan   | 17000.00 | 2550.0000 |
+| Alexander  | Hunold    |  9000.00 | 1350.0000 |
+| Bruce      | Ernst     |  6000.00 |  900.0000 |
+| David      | Austin    |  4800.00 |  720.0000 |
+| Valli      | Pataballa |  4800.00 |  720.0000 |
+| Diana      | Lorentz   |  4200.00 |  630.0000 |
+| Nancy      | Greenberg | 12000.00 | 1800.0000 |
+| Daniel     | Faviet    |  9000.00 | 1350.0000 |
+| John       | Chen      |  8200.00 | 1230.0000 |
+| Ismael     | Sciarra   |  7700.00 | 1155.0000 |
+| Jose       | Manuel    |  2600.00 |  390.0000 |
+| Luis       | Popp      |  6900.00 | 1035.0000 |
+| Adam       | Fripp     |  8200.00 | 1230.0000 |
+| Peter      | Vargas    |  2500.00 |  375.0000 |
+| Charles    | Taylor    |  3200.00 |  480.0000 |
+| Sarah      | Bell      | 10000.00 | 1500.0000 |
+| Rebecca    | Clark     | 15000.00 | 2250.0000 |
++------------+-----------+----------+-----------+
